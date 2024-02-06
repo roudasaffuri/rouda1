@@ -1,0 +1,18 @@
+<div class="aaa">
+    <div class="abc">
+        <h1>Vote Component</h1>
+        <button (click)="counter1($event)">Vote A</button>
+        <button (click)="counter2($event)">Vote B</button>
+
+        <div *ngIf="seconds > 0">
+            <h3>Timer : {{seconds}} </h3>
+        </div>
+        <div *ngIf="(seconds == 0) && (count1>count2 || count1<count2) ">
+            <h3>Timer completed! : {{winner}} is the winner</h3>
+        </div>
+
+        <div *ngIf="(seconds == 0) && (count1 == count2)">
+            <h3>Timer completed! : {{winner}}</h3>
+        </div>
+
+    </div>

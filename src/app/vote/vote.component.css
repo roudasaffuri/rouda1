@@ -1,0 +1,13 @@
+button{
+    margin: 30px;
+    padding: 10px;
+}
+.abc{
+    border: 1px solid black;
+    margin: 30px;
+    width: 400px;
+}
+ .aaa {
+    display: flex;
+    justify-content: center;
+}
